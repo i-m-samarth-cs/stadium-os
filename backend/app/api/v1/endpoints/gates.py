@@ -7,7 +7,7 @@ from app.schemas.gate import GateResponse
 
 router = APIRouter()
 
-@router.get("/", response_model=List[GateResponse])
+@router.get("", response_model=List[GateResponse])
 def read_gates(
     db: Session = Depends(deps.get_db),
     skip: int = 0,
