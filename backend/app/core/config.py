@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite:///./stadiumos.db"
 
     # CORS
-    BACKEND_CORS_ORIGINS: List[str] = ["http://localhost:3000", "http://127.0.0.1:3000"]
+    BACKEND_CORS_ORIGINS: List[str] | str = ["http://localhost:3000", "http://127.0.0.1:3000"]
 
     # AI Settings
     NVIDIA_API_KEY: str = ""
